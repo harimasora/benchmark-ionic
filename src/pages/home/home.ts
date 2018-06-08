@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { DownloadPage } from '../download/download';
 import { UploadPage } from '../upload/upload';
 import { CameraPage } from '../camera/camera';
+import { MapPage } from '../map/map';
 
 @Component({
   selector: 'page-home',
@@ -22,7 +23,7 @@ export class HomePage {
       "location": CameraPage
     }, {
       "title": "Map & Location",
-      "location": null
+      "location": MapPage
     }, {
       "title": "Accelerometer & Gyro",
       "location": null

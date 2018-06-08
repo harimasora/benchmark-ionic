@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { DownloadPage } from '../pages/download/download';
 import { UploadPage } from '../pages/upload/upload';
 import { CameraPage } from '../pages/camera/camera';
+import { MapPage } from '../pages/map/map';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CameraPage } from '../pages/camera/camera';
     HomePage,
     DownloadPage,
     UploadPage,
-    CameraPage
+    CameraPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { CameraPage } from '../pages/camera/camera';
     HomePage,
     DownloadPage,
     UploadPage,
-    CameraPage
+    CameraPage,
+    MapPage
   ],
   providers: [
     StatusBar,
