@@ -6,6 +6,7 @@ import { CameraPage } from '../camera/camera';
 import { MapPage } from '../map/map';
 import { AccelerometerPage } from '../accelerometer/accelerometer';
 import { CompassPage } from '../compass/compass';
+import { TouchPage } from '../touch/touch';
 
 @Component({
   selector: 'page-home',
@@ -34,7 +35,7 @@ export class HomePage {
       "location": CompassPage
     }, {
       "title": "Touch ID",
-      "location": null
+      "location": TouchPage
     }, {
       "title": "Proximity Sensor",
       "location": null

@@ -12,6 +12,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { MapPage } from '../pages/map/map';
 import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
 import { CompassPage } from '../pages/compass/compass';
+import { TouchPage } from '../pages/touch/touch';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CompassPage } from '../pages/compass/compass';
     CameraPage,
     MapPage,
     AccelerometerPage,
-    CompassPage
+    CompassPage,
+    TouchPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { CompassPage } from '../pages/compass/compass';
     CameraPage,
     MapPage,
     AccelerometerPage,
-    CompassPage
+    CompassPage,
+    TouchPage
   ],
   providers: [
     StatusBar,
