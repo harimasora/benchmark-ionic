@@ -5,6 +5,7 @@ import { UploadPage } from '../upload/upload';
 import { CameraPage } from '../camera/camera';
 import { MapPage } from '../map/map';
 import { AccelerometerPage } from '../accelerometer/accelerometer';
+import { CompassPage } from '../compass/compass';
 
 @Component({
   selector: 'page-home',
@@ -30,7 +31,7 @@ export class HomePage {
       "location": AccelerometerPage
     }, {
       "title": "Compass",
-      "location": null
+      "location": CompassPage
     }, {
       "title": "Touch ID",
       "location": null

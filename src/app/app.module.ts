@@ -11,6 +11,7 @@ import { UploadPage } from '../pages/upload/upload';
 import { CameraPage } from '../pages/camera/camera';
 import { MapPage } from '../pages/map/map';
 import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
+import { CompassPage } from '../pages/compass/compass';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
     UploadPage,
     CameraPage,
     MapPage,
-    AccelerometerPage
+    AccelerometerPage,
+    CompassPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
     UploadPage,
     CameraPage,
     MapPage,
-    AccelerometerPage
+    AccelerometerPage,
+    CompassPage
   ],
   providers: [
     StatusBar,
