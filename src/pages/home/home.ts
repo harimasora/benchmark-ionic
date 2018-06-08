@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DownloadPage } from '../download/download';
 
 @Component({
   selector: 'page-home',
@@ -10,7 +11,7 @@ export class HomePage {
   pages = [
     {
       "title": "Download",
-      "location": null
+      "location": DownloadPage
     }, {
       "title": "Upload",
       "location": null
@@ -42,7 +43,10 @@ export class HomePage {
   }
 
   pageSelected(page) {
-    console.log(page.title)
+    console.log(page.title);
+    if (page.location) {
+      this.navCtrl.push(page.location);
+    }
   }
 
 }
