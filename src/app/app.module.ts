@@ -16,6 +16,9 @@ import { TouchPage } from '../pages/touch/touch';
 import { ProximityPage } from '../pages/proximity/proximity';
 import { BluetoothPage } from '../pages/bluetooth/bluetooth';
 
+import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -51,6 +54,9 @@ import { BluetoothPage } from '../pages/bluetooth/bluetooth';
   providers: [
     StatusBar,
     SplashScreen,
+    FileTransfer,
+    FileTransferObject,
+    File,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
