@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DownloadPage } from '../download/download';
+import { UploadPage } from '../upload/upload';
 
 @Component({
   selector: 'page-home',
@@ -14,7 +15,7 @@ export class HomePage {
       "location": DownloadPage
     }, {
       "title": "Upload",
-      "location": null
+      "location": UploadPage
     }, {
       "title": "Camera",
       "location": null
