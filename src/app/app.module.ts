@@ -13,6 +13,7 @@ import { MapPage } from '../pages/map/map';
 import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
 import { CompassPage } from '../pages/compass/compass';
 import { TouchPage } from '../pages/touch/touch';
+import { ProximityPage } from '../pages/proximity/proximity';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TouchPage } from '../pages/touch/touch';
     MapPage,
     AccelerometerPage,
     CompassPage,
-    TouchPage
+    TouchPage,
+    ProximityPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { TouchPage } from '../pages/touch/touch';
     MapPage,
     AccelerometerPage,
     CompassPage,
-    TouchPage
+    TouchPage,
+    ProximityPage
   ],
   providers: [
     StatusBar,

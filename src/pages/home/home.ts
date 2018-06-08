@@ -7,6 +7,7 @@ import { MapPage } from '../map/map';
 import { AccelerometerPage } from '../accelerometer/accelerometer';
 import { CompassPage } from '../compass/compass';
 import { TouchPage } from '../touch/touch';
+import { ProximityPage } from '../proximity/proximity';
 
 @Component({
   selector: 'page-home',
@@ -38,7 +39,7 @@ export class HomePage {
       "location": TouchPage
     }, {
       "title": "Proximity Sensor",
-      "location": null
+      "location": ProximityPage
     }, {
       "title": "Bluetooth Connection",
       "location": null
