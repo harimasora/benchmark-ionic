@@ -4,6 +4,7 @@ import { DownloadPage } from '../download/download';
 import { UploadPage } from '../upload/upload';
 import { CameraPage } from '../camera/camera';
 import { MapPage } from '../map/map';
+import { AccelerometerPage } from '../accelerometer/accelerometer';
 
 @Component({
   selector: 'page-home',
@@ -26,7 +27,7 @@ export class HomePage {
       "location": MapPage
     }, {
       "title": "Accelerometer & Gyro",
-      "location": null
+      "location": AccelerometerPage
     }, {
       "title": "Compass",
       "location": null

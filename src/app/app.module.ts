@@ -10,6 +10,7 @@ import { DownloadPage } from '../pages/download/download';
 import { UploadPage } from '../pages/upload/upload';
 import { CameraPage } from '../pages/camera/camera';
 import { MapPage } from '../pages/map/map';
+import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapPage } from '../pages/map/map';
     DownloadPage,
     UploadPage,
     CameraPage,
-    MapPage
+    MapPage,
+    AccelerometerPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { MapPage } from '../pages/map/map';
     DownloadPage,
     UploadPage,
     CameraPage,
-    MapPage
+    MapPage,
+    AccelerometerPage
   ],
   providers: [
     StatusBar,
