@@ -8,6 +8,7 @@ import { AccelerometerPage } from '../accelerometer/accelerometer';
 import { CompassPage } from '../compass/compass';
 import { TouchPage } from '../touch/touch';
 import { ProximityPage } from '../proximity/proximity';
+import { BluetoothPage } from '../bluetooth/bluetooth';
 
 @Component({
   selector: 'page-home',
@@ -42,7 +43,7 @@ export class HomePage {
       "location": ProximityPage
     }, {
       "title": "Bluetooth Connection",
-      "location": null
+      "location": BluetoothPage
     }]
 
   constructor(public navCtrl: NavController) {

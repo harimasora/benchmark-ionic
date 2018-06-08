@@ -14,6 +14,7 @@ import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
 import { CompassPage } from '../pages/compass/compass';
 import { TouchPage } from '../pages/touch/touch';
 import { ProximityPage } from '../pages/proximity/proximity';
+import { BluetoothPage } from '../pages/bluetooth/bluetooth';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProximityPage } from '../pages/proximity/proximity';
     AccelerometerPage,
     CompassPage,
     TouchPage,
-    ProximityPage
+    ProximityPage,
+    BluetoothPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { ProximityPage } from '../pages/proximity/proximity';
     AccelerometerPage,
     CompassPage,
     TouchPage,
-    ProximityPage
+    ProximityPage,
+    BluetoothPage
   ],
   providers: [
     StatusBar,
