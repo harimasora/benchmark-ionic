@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DownloadPage } from '../pages/download/download';
 import { UploadPage } from '../pages/upload/upload';
+import { CameraPage } from '../pages/camera/camera';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DownloadPage,
-    UploadPage
+    UploadPage,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { UploadPage } from '../pages/upload/upload';
     MyApp,
     HomePage,
     DownloadPage,
-    UploadPage
+    UploadPage,
+    CameraPage
   ],
   providers: [
     StatusBar,
