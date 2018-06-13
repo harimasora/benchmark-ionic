@@ -13,12 +13,20 @@ $ npm install -g ionic
 ```bash
 $ ionic cordova plugin add cordova-plugin-file-transfer
 $ ionic cordova plugin add cordova-plugin-file
+$ ionic cordova plugin add cordova-plugin-camera
 ```
 
 ### Build
 
 ```bash
 $ ionic cordova build ios
+```
+
+É necessário adiconar estas chaves no Info.plist
+
+```
+Privacy - Camera Usage Description
+Privacy - Photo Library Usage Description
 ```
 
 Open the project in Xcode and select the development team in the project editor.

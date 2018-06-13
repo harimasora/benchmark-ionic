@@ -18,6 +18,7 @@ import { BluetoothPage } from '../pages/bluetooth/bluetooth';
 
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { File } from '@ionic-native/file';
     FileTransfer,
     FileTransferObject,
     File,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
