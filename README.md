@@ -17,19 +17,13 @@ $ ionic cordova plugin add cordova-plugin-camera
 $ ionic cordova plugin add cordova-plugin-geolocation
 $ ionic cordova plugin add cordova-plugin-device-motion
 $ ionic cordova plugin add cordova-plugin-gyroscope
+$ ionic cordova plugin add https://github.com/sdesalas/cordova-plugin-magnetometer
 ```
 
 ### Build
 
 ```bash
 $ ionic cordova build ios
-```
-
-É necessário adiconar estas chaves no Info.plist
-
-```
-Privacy - Camera Usage Description
-Privacy - Photo Library Usage Description
 ```
 
 Open the project in Xcode and select the development team in the project editor.
