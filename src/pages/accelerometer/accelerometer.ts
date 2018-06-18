@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { DeviceMotion, DeviceMotionAccelerationData, DeviceMotionAccelerometerOptions } from '@ionic-native/device-motion';
 
 /**
  * Generated class for the AccelerometerPage page.
@@ -14,11 +14,32 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class AccelerometerPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  accelSubscription = null;
+  acceleration = {};
+
+  constructor(private deviceMotion: DeviceMotion) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AccelerometerPage');
+  ionViewWillEnter() {
+    let options : DeviceMotionAccelerometerOptions = {
+      frequency: 1000
+    }
+
+    // Get the device current acceleration
+    this.deviceMotion.getCurrentAcceleration().then(
+      (acceleration: DeviceMotionAccelerationData) => this.acceleration = acceleration,
+      (error: any) => console.log(error)
+    );
+
+    // Watch device acceleration
+    this.accelSubscription = this.deviceMotion.watchAcceleration(options).subscribe((acceleration: DeviceMotionAccelerationData) => {
+      this.acceleration = acceleration;
+    });
+  }
+
+  ionViewWillLeave() {
+    // Stop watch
+    this.accelSubscription.unsubscribe();
   }
 
 }

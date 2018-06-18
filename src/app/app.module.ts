@@ -20,6 +20,7 @@ import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
+import { DeviceMotion } from '@ionic-native/device-motion';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     File,
     Camera,
     Geolocation,
+    DeviceMotion,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
