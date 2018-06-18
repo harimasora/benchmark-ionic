@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the ProximityPage page.
@@ -8,17 +7,23 @@ import { NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+declare var navigator;
+
 @Component({
   selector: 'page-proximity',
   templateUrl: 'proximity.html',
 })
 export class ProximityPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor() {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProximityPage');
+    navigator.proximity.enableSensor();
+  }
+
+  ionViewWillLeave() {
+    navigator.proximity.disableSensor();
   }
 
 }

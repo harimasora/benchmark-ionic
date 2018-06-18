@@ -20,6 +20,7 @@ $ ionic cordova plugin add cordova-plugin-gyroscope
 $ ionic cordova plugin add https://github.com/sdesalas/cordova-plugin-magnetometer
 $ ionic cordova plugin add cordova-plugin-device-orientation
 $ ionic cordova plugin add cordova-plugin-touch-id
+$ ionic cordova plugin add https://github.com/awoken-well/cordova-plugin-proximity.git
 ```
 
 ### Build
