@@ -22,6 +22,7 @@ import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 import { DeviceMotion } from '@ionic-native/device-motion';
 import { Gyroscope } from '@ionic-native/gyroscope';
+import { DeviceOrientation } from '@ionic-native/device-orientation';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { Gyroscope } from '@ionic-native/gyroscope';
     Geolocation,
     DeviceMotion,
     Gyroscope,
+    DeviceOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
