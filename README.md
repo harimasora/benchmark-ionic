@@ -16,6 +16,7 @@ $ ionic cordova plugin add cordova-plugin-file
 $ ionic cordova plugin add cordova-plugin-camera
 $ ionic cordova plugin add cordova-plugin-geolocation
 $ ionic cordova plugin add cordova-plugin-device-motion
+$ ionic cordova plugin add cordova-plugin-gyroscope
 ```
 
 ### Build

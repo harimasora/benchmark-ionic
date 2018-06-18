@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DeviceMotion, DeviceMotionAccelerationData, DeviceMotionAccelerometerOptions } from '@ionic-native/device-motion';
+import { Gyroscope, GyroscopeOrientation, GyroscopeOptions } from '@ionic-native/gyroscope';
 
 /**
  * Generated class for the AccelerometerPage page.
@@ -14,32 +15,51 @@ import { DeviceMotion, DeviceMotionAccelerationData, DeviceMotionAccelerometerOp
 })
 export class AccelerometerPage {
 
+  //Accelerometer
   accelSubscription = null;
   acceleration = {};
 
-  constructor(private deviceMotion: DeviceMotion) {
+  //Gyrsoscope
+  gyroSubscription = null;
+  orientation = {}
+
+  constructor(private deviceMotion: DeviceMotion, private gyroscope: Gyroscope) {
   }
 
   ionViewWillEnter() {
-    let options : DeviceMotionAccelerometerOptions = {
+    // Accelerometer
+    let accelOptions: DeviceMotionAccelerometerOptions = {
       frequency: 1000
     }
 
-    // Get the device current acceleration
     this.deviceMotion.getCurrentAcceleration().then(
       (acceleration: DeviceMotionAccelerationData) => this.acceleration = acceleration,
       (error: any) => console.log(error)
     );
 
-    // Watch device acceleration
-    this.accelSubscription = this.deviceMotion.watchAcceleration(options).subscribe((acceleration: DeviceMotionAccelerationData) => {
+    this.accelSubscription = this.deviceMotion.watchAcceleration(accelOptions).subscribe((acceleration: DeviceMotionAccelerationData) => {
       this.acceleration = acceleration;
     });
+
+    //Gyroscope
+    let gyroOptions: GyroscopeOptions = {
+      frequency: 1000
+    };
+
+    this.gyroscope.getCurrent(gyroOptions)
+      .then((orientation: GyroscopeOrientation) => this.orientation = orientation)
+      .catch()
+
+    this.gyroSubscription = this.gyroscope.watch(gyroOptions)
+      .subscribe((orientation: GyroscopeOrientation) => {
+        this.orientation = orientation;
+      });
   }
 
   ionViewWillLeave() {
     // Stop watch
     this.accelSubscription.unsubscribe();
+    this.gyroSubscription.unsubscribe();
   }
 
 }
