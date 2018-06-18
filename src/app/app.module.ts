@@ -23,6 +23,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { DeviceMotion } from '@ionic-native/device-motion';
 import { Gyroscope } from '@ionic-native/gyroscope';
 import { DeviceOrientation } from '@ionic-native/device-orientation';
+import { TouchID } from '@ionic-native/touch-id';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { DeviceOrientation } from '@ionic-native/device-orientation';
     DeviceMotion,
     Gyroscope,
     DeviceOrientation,
+    TouchID,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

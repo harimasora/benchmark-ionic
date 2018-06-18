@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.harimasora.benchmark-ionic." version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.harimasora.benchmark-ionic." version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -106,5 +106,8 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.19" />
     <plugin name="cordova-plugin-magnetometer" spec="git+https://github.com/sdesalas/cordova-plugin-magnetometer.git" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+    <plugin name="cordova-plugin-touch-id" spec="^3.3.1">
+        <variable name="FACEID_USAGE_DESCRIPTION" value=" " />
+    </plugin>
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 </widget>
