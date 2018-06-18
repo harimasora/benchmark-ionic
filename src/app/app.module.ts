@@ -14,7 +14,6 @@ import { AccelerometerPage } from '../pages/accelerometer/accelerometer';
 import { CompassPage } from '../pages/compass/compass';
 import { TouchPage } from '../pages/touch/touch';
 import { ProximityPage } from '../pages/proximity/proximity';
-import { BluetoothPage } from '../pages/bluetooth/bluetooth';
 
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
@@ -36,8 +35,7 @@ import { TouchID } from '@ionic-native/touch-id';
     AccelerometerPage,
     CompassPage,
     TouchPage,
-    ProximityPage,
-    BluetoothPage
+    ProximityPage
   ],
   imports: [
     BrowserModule,
@@ -54,8 +52,7 @@ import { TouchID } from '@ionic-native/touch-id';
     AccelerometerPage,
     CompassPage,
     TouchPage,
-    ProximityPage,
-    BluetoothPage
+    ProximityPage
   ],
   providers: [
     StatusBar,
